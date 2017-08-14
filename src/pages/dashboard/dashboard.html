@@ -1,0 +1,46 @@
+<ion-header class="heade-ti">
+  <ion-navbar color="ngocolor">
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button><img class="center-image" src="assets/images/logotop.png" width="200" height="40" />
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="register-log">
+<ion-label class="page-title" text-center>Dashboard</ion-label>
+<div class="register-form">
+<ion-grid>
+  <ion-row class="dash-row-border">
+    <ion-col col-6 text-center class="dash-col-border" (click)="postneeds()">
+	
+	<i><img class="center-image" src="assets/images/inbox.png" width="70" height="70"/></i><br/> 
+	<span class="dash-icon-title">Post Needs</span>
+	<br/> 
+		<br/>
+	</ion-col>
+    <ion-col col-6  text-center (click)="manageneeds()">
+	<i><img class="center-image" src="assets/images/edit.png" width="70" height="70"/></i><br> <span class="dash-icon-title">Manage Needs</span>
+		<br/> 
+			<br/>
+	</ion-col>
+  </ion-row>
+  <ion-row>
+
+    <ion-col col-6 text-center class="dash-col-border" (click)="donations()">
+	<br>
+	<i><img class="center-image" src="assets/images/eld.png" width="70" height="70"/></i><br>
+    <span class="dash-icon-title">Manage Donations</span>
+	
+	
+	</ion-col>
+    <ion-col col-6 text-center (click)="setting()">
+		<br>
+	<i><img class="center-image" src="assets/images/settings.png" width="70" height="70"/></i><br>
+	<span class="dash-icon-title">Settings</span>
+	</ion-col>
+
+  </ion-row>
+</ion-grid>
+</div>
+</ion-content>

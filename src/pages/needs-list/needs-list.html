@@ -1,0 +1,109 @@
+<ion-header class="heade-ti">
+  <ion-navbar color="ngocolor">
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="dashboardPage()">
+          <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+    <img class="center-image" src="assets/images/logotop.png" width="200" height="40" />
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="register-log">
+
+<ion-label class="page-title" text-center>Manage Needs</ion-label>
+
+
+<div class="register-form">
+<div class="segments">
+  <ion-segment [(ngModel)]="needs">
+    <ion-segment-button value="manageneeds" (click)="needsLists()">
+      Needs List
+    </ion-segment-button>
+    <ion-segment-button value="donations" (click)="donationsLists()">
+      Donations List
+    </ion-segment-button>
+  </ion-segment>
+</div>
+<br />
+<div [ngSwitch]="needs">
+  <ion-list *ngSwitchCase="'manageneeds'">
+   <ion-searchbar class="serach-bt" (ionInput)="getItems($event)"></ion-searchbar>  
+<ion-card class="listed" *ngFor="let needs of needslists">
+  <ion-card-content>
+  <ion-grid>
+  <ion-row>
+    <ion-col col-4 class="lba">Needs List</ion-col>
+    <ion-col col-8>{{needs.bn_name}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4 class="lba">Created/Updated Date</ion-col>
+    <ion-col col-8>{{needs.date_time}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4 class="lba">Status</ion-col>
+    <ion-col col-8 *ngIf="needs.status == 1">Active</ion-col>
+    <ion-col col-8 *ngIf="needs.status == 2">Blocked</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4 class="lba">Take Action</ion-col>
+    <ion-col col-8 *ngIf="needs.status == 1"><ion-badge item-end (click)="changeStatus(needs.id,needs.status)"><i class="fa fa-ban" aria-hidden="true"></i> Block</ion-badge></ion-col>
+     <ion-col col-8 *ngIf="needs.status == 2"><ion-badge item-end (click)="changeStatus(needs.id,needs.status)"><i class="fa fa-check" aria-hidden="true"></i> Approved</ion-badge>
+     </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <button ion-button icon-left small class="edit-btn"   
+      (click)="viewNeedsproductList(needs.id)">
+        <i class="fa fa-eye" aria-hidden="true"></i>&nbsp;View
+      </button>
+    </ion-col>
+    </ion-row>
+   </ion-grid>
+  </ion-card-content>
+</ion-card>	
+
+</ion-list>
+<ion-list *ngSwitchCase="'donations'">
+     <ion-searchbar class="serach-bt" (ionInput)="getItems($event)"></ion-searchbar>  
+<ion-card class="listed" *ngFor="let donationneeds of donationsListsInfo">
+  <ion-card-content>
+  <ion-grid>
+  <ion-row>
+    <ion-col col-4 class="lba">Donar Name</ion-col>
+    <ion-col col-8>{{donationneeds.donor_name}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4 class="lba">Donar Address</ion-col>
+    <ion-col col-8>{{donationneeds.donor_address}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4 class="lba">Donated Date</ion-col>
+    <ion-col col-8>{{donationneeds.donated_date}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4 class="lba">Status</ion-col>
+    <ion-col col-8><ion-col col-8 *ngIf="donationneeds.status == 1">Closed</ion-col>
+    <ion-col col-8 *ngIf="donationneeds.status == 0">Pending</ion-col>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <button ion-button icon-left small class="edit-btn" 
+      (click)="viewdonationproductList(donationneeds.id)">
+        <i class="fa fa-eye" aria-hidden="true"></i>&nbsp;View
+      </button>
+    </ion-col>
+    </ion-row>
+   </ion-grid>
+  </ion-card-content>
+</ion-card>	
+</ion-list>
+  
+</div>
+</div>
+</ion-content>

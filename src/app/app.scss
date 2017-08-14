@@ -1,0 +1,125 @@
+// http://ionicframework.com/docs/v2/theming/
+@import url('https://fonts.googleapis.com/css?family=Padauk');
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.ngo-bg-color{
+background-image: url('../assets/images/background.png');width:100%;background-repeat: no-repeat;background-size: cover;
+}
+.text-input-md{margin:10px 8px !important;}
+.text-input::-moz-placeholder {
+  color:#fff !important;
+}
+
+.text-input:-ms-input-placeholder {
+  color:#fff !important;
+}
+
+.text-input::-webkit-input-placeholder {
+  text-indent: 0;
+   color:#fff !important;
+}
+
+.ngo-fcolor{
+	color:#ffffff;
+}
+
+.log-justify{
+	margin-top: 25px;    
+    position:absolute;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+}
+.ion-cardpage{
+	background: #ffffff;
+	opacity:0.8
+}
+.register-btn{
+	font-size:20px;
+}
+.header-md .button-inner{ color:#fff;}
+.header-ios .button-inner{ color:#fff;}
+.back-button{ color:#fff !important;}
+.navbar-image{   
+    position:relative;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+}
+
+
+
+.text-input::-moz-placeholder {
+  color: white;
+}
+.alert-md .alert-head {
+    padding:10px !important; background:#C31F41;
+    text-align: start;
+}
+.alert-md .alert-head h2{ text-align:center; font-size:18px; font-weight:600; color:#fff;}
+
+.alert-ios .alert-head {
+    padding:10px !important; background:#C31F41;
+    text-align: start;
+}
+.alert-ios .alert-head h2{ text-align:center; font-size:18px; font-weight:600; color:#fff;}
+.alert-ios .alert-radio-group, .alert-ios .alert-checkbox-group{border-top:none;}
+.alert-msg-0{ display:none;}
+.alert-msg-1 {display:none;}
+.alert-msg-2 {display:none;}
+.alert-message {
+    overflow-y: auto;
+}
+.text-input:-ms-input-placeholder {
+  color: white;
+}
+
+.text-input::-webkit-input-placeholder {
+  text-indent: 0;
+  color: white;
+}
+.heade-ti .toolbar-content-ios {
+    text-align: center;
+}
+.select{
+	border: 1px solid white;
+    border-radius: 25px;
+     text-color: #fff;
+     background-color: #fe4a6f;
+}
+.menu-bg .list-ios .item-ios {
+    padding-left: 0px !important;
+    background: none;
+    margin: 0px;
+}
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{ border-bottom:none;}
+.menu-bg .list-ios .item-block .item-inner {
+    border-bottom: 1px solid rgb(198, 193, 193);
+}
+.menu-bg .list-ios .item-ios .item-inner .input-wrapper .label-ios {
+    color: rgb(0, 0, 0);
+    padding-left: 15px;
+    font-family: Padauk, sans-serif;
+    font-size: 18px;
+    margin: 0px;
+}
+.menu-bg{ background: rgba(0, 0, 0, 0) linear-gradient(45deg, silver 0%, white 50%, gray 100%);}
+.menu-bg .list-md .item-md{ padding-left:0px !important; background:none; margin:0px;}
+.menu-bg .list-md .item-md .item-inner .input-wrapper .label-md{color:#000; padding-left:15px;font-family: 'Padauk', sans-serif;font-size:18px; margin:0px;}
+
+.menu-bg .list-md .item-block .item-inner {
+    border-bottom: 1px solid #c6c1c1;
+}
+

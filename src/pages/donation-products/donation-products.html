@@ -1,0 +1,95 @@
+<ion-header class="heade-ti">
+  <ion-navbar color="ngocolor">
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+     
+    </button>
+     <ion-buttons left>
+      <button ion-button icon-only (click)="dashboardPage()">
+          <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+    <img class="center-image" src="assets/images/logotop.png" width="200" height="40" />
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="register-log">
+<ion-label class="page-title" text-center>Donation Products List</ion-label>
+
+<div class="register-form" *ngFor="let viewneeds of viewListInfo">
+<ion-grid class="main-donor">
+  <ion-row>
+    <ion-col col-6 class="lba">DONOR NAME</ion-col>
+    <ion-col col-6>{{viewneeds.donor_name}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6 class="lba">DONOR ADDRESS</ion-col>
+    <ion-col col-6>{{viewneeds.donor_address}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6 class="lba">DONATED DATE</ion-col>
+    <ion-col col-6>{{viewneeds.donated_date}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6 class="lba">DONATION STATUS</ion-col>
+     <ion-col col-6 *ngIf="viewneeds.status == 1">Completed</ion-col>
+    <ion-col col-6 *ngIf="viewneeds.status == 0">Pending</ion-col>
+  </ion-row>
+</ion-grid>
+<hr>
+<ion-searchbar
+  [(ngModel)]="myInput"
+  [showCancelButton]="shouldShowCancel"
+  (ionInput)="onInput($event)"
+  (ionCancel)="onCancel($event)">
+</ion-searchbar>
+<ion-card class="listed" *ngFor="let viewneedss of viewneedListInfo">
+  <ion-card-content>
+  <ion-grid>
+  <ion-row>
+    <ion-col col-4 class="lba">Product</ion-col>
+    <ion-col col-8>Rice</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4 class="lba">Donated Quantity</ion-col>
+    <ion-col col-8>{{viewneedss.qty_donated}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4 class="lba">Donated Type</ion-col>
+    <ion-col col-8>{{viewneedss.donate_type}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4 class="lba">Shipping Details</ion-col>
+    <ion-col col-8></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4 class="lba">Received Quantity</ion-col>
+    <ion-col col-8>{{viewneedss.status}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4 class="lba">Status</ion-col>
+    <ion-col col-8> <ion-col col-6 *ngIf="viewneedss.status == 2">Rejected</ion-col>
+     <ion-col col-6 *ngIf="viewneedss.status == 0">Pending</ion-col>
+    <ion-col col-6 *ngIf="viewneedss.status == 1">Approved</ion-col>
+    </ion-col>
+  </ion-row>
+  <ion-row *ngIf="viewneeds.status != 1">
+    <ion-col col-6><strong>Take Action</strong></ion-col>
+     <ion-col col-6>
+     <ion-badge item-end *ngIf="viewneedss.status == 1" 
+     (click)="changeStatus(viewneedss.id,viewneedss.status)"><i class="fa fa-ban" aria-hidden="true"></i> Reject</ion-badge>
+    <ion-badge *ngIf="viewneedss.status == 2" item-end (click)="changeStatus(viewneedss.id,viewneedss.status)"><i class="fa fa-check" aria-hidden="true"></i> Approve</ion-badge>
+     <ion-badge *ngIf="viewneedss.status == 0" item-end (click)="changeStatus(viewneedss.id,viewneedss.status)"><i class="fa fa-check" aria-hidden="true"></i> Approve
+     </ion-badge>
+     <ion-badge item-end (click)="modifyNeeds(viewneedss)"><i class="fa fa-edit" aria-hidden="true"></i> Modify
+    </ion-badge></ion-col>
+  </ion-row>
+   </ion-grid>
+  </ion-card-content>
+</ion-card>	
+
+
+
+</div>
+</ion-content>

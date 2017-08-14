@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Padauk');
+
+page-login 									{
+/*.title													{top:180px;position:relative;font-size:28px;color:#ffffff;}*/
+.loginForm													{top:210px;position:relative;}
+.btnselect													{border-radius:25px;}
+.center-image									       		{margin:0 auto;max-width:302px !important;max-height:310px !important; }
+.logo-parent									            {text-align:center;}
+.onboard-title											    {font-size:38px;color:#fff;}
+.onboard-title p										    {font-size:35px; color:#fff;  text-shadow: 0px 1px 2px #5f5b5b;  padding-top:5px; margin:0px; padding-bottom:20px;}
+.onboard-title p b										    {font-size:35px; color:#fff;  font-weight: bold;}
+.login-bg													{background-image: url('../assets/images/login.png');width:100%;background-repeat: no-repeat;background-size: cover;}
+.forgot														{font-family: 'Padauk', sans-serif; color:#fff !important; font-weight:400; margin:0px; text-align:center; font-size:17px !important; padding-bottom:5px !important;}
+ion-input													{border:none !important; background:#fe4a6f; color:#fff;}
+.loginform .list-md .input-md .text-input-md				{margin:10px 8px !important;font-family: 'Padauk', sans-serif;}
+.loginform .list-md .button-md								{background:none; box-shadow:none !important; border:2px solid #9d0c2a;font-family: 'Padauk', sans-serif;text-transform: capitalize; font-size:18px; height:40px;}
+.acount p													{font-family: 'Padauk', sans-serif; color:#fff !important; font-weight:400; margin:0px; text-align:center; font-size:17px !important;}
+.acount a													{font-family: 'Padauk', sans-serif; color:#000 !important; font-weight:400; margin:0px; font-size:17px !important;}
+ion-input													{border:1px solid #fff; border-radius:25px;color: #fff; padding-left:10px;}
+.content-md .scroll-content .logo-parent					{ margin-top:70px !important;}
+.content-ios .scroll-content .logo-parent					{ margin-top:40px !important;}
+.loginform .list-ios										{ margin-bottom:20px;}
+.loginform .list-ios .button-ios								{background:none; box-shadow:none !important; height:40px; border:2px solid #9d0c2a;font-family: 'Padauk', sans-serif;text-transform: capitalize; font-size:18px;}
+}

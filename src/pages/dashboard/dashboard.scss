@@ -1,0 +1,54 @@
+page-dashboard {
+
+.dash-row-border{
+	border-bottom:2px solid #c31f41;
+}
+.dash-col-border{
+	border-right:2px solid #c31f41;
+}
+ion-app.md [padding], ion-app.md [padding] .scroll-content {
+     padding: 0px; 
+}
+.heade-ti .toolbar-content-md{ text-align:center;}
+.center-image {
+    margin:auto 0;
+
+}
+
+.popover-md .popover-content{}
+
+.heade-ti h1{text-align:center;   color: #fff; padding:0px !important;text-transform: uppercase;
+    font-size:25px;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    text-shadow: 0 1px 2px #5f5b5b;}
+
+.dash-icon-title{  color: #fff;
+    float: left;
+    font-family: "Padauk",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 6px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;  }
+
+.register-form{margin:80px 8px 8px 8px;}
+.register-log{background:rgba(0, 0, 0, 0) linear-gradient(to bottom, #fb486c 0%, #f54468 36%, #e6395b 58%, #d62d4f 77%, #cb2546 100%); height:100%;}
+.register-log .scroll-content{padding:0px !important;}
+.register-log .scroll-content .label-md{ margin:0px;}
+.register-log .scroll-content .page-title{
+	color:#8f001d;
+	background:#fe809a;
+	font-size:20px;font-family: 'Padauk', sans-serif;
+	padding:7px;
+}
+
+
+.heade-ti .toolbar-content-ios{ text-align:center;}
+.register-log .scroll-content .label-ios{ margin:0px;}
+
+
+
+}

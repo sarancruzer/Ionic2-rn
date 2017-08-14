@@ -1,0 +1,102 @@
+<ion-header class="heade-ti">
+  <ion-navbar color="ngocolor">
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="dashboardPage()">
+          <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+    <img class="center-image" src="assets/images/logotop.png" width="200" height="40" />
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="register-log">
+  <ion-fab top right edge>
+    <button ion-fab mini (click)="addmoreNeeds()"><ion-icon name="add"></ion-icon></button>
+	</ion-fab>
+<ion-label class="page-title" text-center>Post Needs</ion-label>
+<form [formGroup]="authForm">
+<div class="register-form">
+<br/>
+<ion-list>
+    <ion-input type="text" placeholder="Post Needs Name" [(ngModel)]="needs_name" formControlName="needs_name" [class.invalid]="!authForm.controls.needs_name.valid && (authForm.controls.needs_name.dirty)"></ion-input>
+     <small *ngIf="!authForm.controls.needs_name.valid && (authForm.controls.needs_name.dirty || submitAttempt)">
+        <p class="valid err-reds">This field is required.</p>
+     </small> 
+</ion-list>
+<div formArrayName="postneeds_list">
+
+<div  *ngFor="let item of authForm.controls.postneeds_list.controls; let i=index">
+ <div  [formGroupName]="i">
+
+<ion-list>
+    <ion-input type="text" placeholder="Product" [(ngModel)]="product_name" formControlName="product_name" [class.invalid]="!authForm.controls.postneeds_list.
+    controls[i].controls.product_name.valid && (authForm.controls.postneeds_list.
+    controls[i].controls.product_name.dirty)"></ion-input>
+     <small *ngIf="!authForm.controls.postneeds_list.
+                controls[i].controls.product_name.valid && (authForm.controls.postneeds_list.
+                controls[i].controls.product_name.dirty || submitAttempt)">
+        <p class="valid err-reds">This field is required.</p>
+     </small> 
+</ion-list>
+<ion-list>
+    <ion-input type="text" placeholder="Product Description" [(ngModel)]="description" formControlName="description" [class.invalid]="!authForm.controls.postneeds_list.
+    controls[i].controls.description.valid && (authForm.controls.postneeds_list.
+    controls[i].controls.description.dirty)"></ion-input>
+     <small *ngIf="!authForm.controls.postneeds_list.
+                controls[i].controls.description.valid && (authForm.controls.postneeds_list.
+                controls[i].controls.description.dirty || submitAttempt)">
+        <p class="valid err-reds">This field is required.</p>
+     </small> 
+</ion-list>
+<ion-list>
+    <ion-input type="text" placeholder="Quantity" [(ngModel)]="quantity" formControlName="quantity" [class.invalid]="!authForm.controls.postneeds_list.
+    controls[i].controls.quantity.valid && (authForm.controls.postneeds_list.
+    controls[i].controls.quantity.dirty)"></ion-input>
+     <small *ngIf="!authForm.controls.postneeds_list.
+                controls[i].controls.quantity.valid && (authForm.controls.postneeds_list.
+                controls[i].controls.quantity.dirty || submitAttempt)">
+        <p class="valid err-reds">This field is required.</p>
+     </small> 
+</ion-list>
+<ion-list>
+  <ion-item class="select-bg">
+    <ion-label>No Units</ion-label>
+    <ion-select formControlName="units"  
+              [(ngModel)]="units">
+      <ion-option value="nes">No Units</ion-option>
+      <ion-option value="n64">Sets</ion-option>
+      <ion-option value="ps">Pcs</ion-option>
+      <ion-option value="genesis">Packets</ion-option>
+      <ion-option value="saturn">Liters</ion-option>
+      <ion-option value="snes">KGs</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+</div>
+<ion-col width-50 style="padding:0px;margin:1px;" *ngIf="authForm.controls.postneeds_list.controls.length > 1">
+    <button (click)="removeNeeds(i)" ion-button icon-left clear>
+        <ion-icon ios="ios-remove-circle" md="md-remove-circle"></ion-icon>Remove
+    </button>
+      </ion-col>
+</div>
+</div>
+ 
+<ion-grid>
+    <ion-row>
+      <ion-col width-50 style="padding:0px; margin:1px;">
+        <button ion-button small start class="btn-can" button-left round>Cancel</button>
+      </ion-col>
+      <ion-col width-50 style="padding:0px;margin:1px;">
+    <button ion-button small end class="btn-blue" button-right round (click)="addNedds()">Submit
+    </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+</form>
+</ion-content>

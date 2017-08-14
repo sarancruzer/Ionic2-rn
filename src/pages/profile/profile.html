@@ -1,0 +1,217 @@
+<ion-header class="heade-ti">
+  <ion-navbar color="ngocolor">
+  <ion-buttons right>
+   <button ion-button  end (click)="editProfile()">
+      <ion-icon name="create"></ion-icon>
+    </button>
+    </ion-buttons>
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="dashboardPage()">
+          <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+    <img class="center-image" src="assets/images/logotop.png" width="200" height="40" />
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="register-log">
+<ion-label class="page-title" text-center>View Profile</ion-label>
+<br/>
+
+<div class="register-form">
+<ion-card class="listed">
+  <ion-card-content>
+<ion-row>
+	<ion-col col-12 class="lba">
+		<b>Name</b>
+	</ion-col>
+	<ion-col>
+		<p>{{profileInfo[0]?.org_name}}</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12 class="lba">
+		<b>Description</b>
+	</ion-col>
+	<ion-col col-12>
+		<p>{{profileInfo[0]?.description}}</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12 class="lba">
+		<b>Email</b>
+	</ion-col>
+	<ion-col col-12>
+		<p>{{profileInfo[0]?.email}}</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12 class="lba">
+		<b>Category</b>
+	</ion-col>
+	<ion-col col-12>
+		<p>{{profileInfo[0]?.cat_name}}</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12 class="lba">
+		<b>Website</b>
+	</ion-col>
+	<ion-col col-12>
+		<p>{{profileInfo[0]?.web_link}}</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12 class="lba">
+		<b>Goverment Registration Id</b>
+	</ion-col>
+	<ion-col col-12>
+		<p>{{profileInfo[0]?.govt_registration_id}}</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12 class="lba">
+		<b>Goverment Registration Date</b>
+	</ion-col>
+	<ion-col col-12>
+		<p>{{profileInfo[0]?.govt_registration_dt}}</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12 class="lba">
+		<b>Certificate Expiry Date</b>
+	</ion-col>
+	<ion-col col-12>
+		<p>{{profileInfo[0]?.certificate_expiry_dt}}</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12 class="lba">
+		<b>Registration Scanned copy</b>
+	</ion-col>
+	<ion-col col-12>
+		<p>{{profileInfo[0]?.registration_scan_image}}</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12>
+		<b>Age</b>
+	</ion-col>
+	<ion-col>
+		<p> < 5 </p>
+	</ion-col>
+	<ion-col>
+		<p>6-15</p>
+	</ion-col>
+	<ion-col>
+		<p>16-30</p>
+	</ion-col>
+	<ion-col>
+		<p>31-60</p>
+	</ion-col>
+	<ion-col>
+		<p> > 60</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12>
+		<b>Male</b>
+	</ion-col>
+	<ion-col>
+		<p>2</p>
+	</ion-col>
+	<ion-col>
+		<p>3</p>
+	</ion-col>
+	<ion-col>
+		<p>4</p>
+	</ion-col>
+	<ion-col>
+		<p>5</p>
+	</ion-col>
+	<ion-col>
+		<p>6</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col  col-12>
+		<b>Female</b>
+	</ion-col>
+	<ion-col>
+		<p>2</p>
+	</ion-col>
+	<ion-col>
+		<p>3</p>
+	</ion-col>
+	<ion-col>
+		<p>4</p>
+	</ion-col>
+	<ion-col>
+		<p>5</p>
+	</ion-col>
+	<ion-col>
+		<p>6</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12 class="lba">
+		<b>President Incharge</b>
+	</ion-col>
+	<ion-col col-12>
+		<p>{{profileInfo[0]?.president_incharge}}</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12 class="lba">
+		<b>Alternate Contact Person</b>
+	</ion-col>
+	<ion-col col-12>
+		<p>{{profileInfo[0]?.alternate_contact_person}}</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12 class="lba">
+		<b>Address</b>
+	</ion-col>
+	<ion-col col-12>
+		<p>{{profileInfo[0]?.street_address1}}</p>
+		<p>{{profileInfo[0]?.street_address2}}</p>
+		<p>{{profileInfo[0]?.city_name}}</p>
+		<p>{{profileInfo[0]?.state_name}}</p>
+		<p>{{profileInfo[0]?.country_name}}</p>
+		<p>{{profileInfo[0]?.zip}}</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12 class="lba">
+		<b>Alternate Contact Person</b>
+	</ion-col>
+	<ion-col col-12>
+		<p>{{profileInfo[0]?.alternate_contact_person}}</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12 class="lba">
+		<b>Mobile</b>
+	</ion-col>
+	<ion-col col-12>
+		<p>{{profileInfo[0]?.contact_number_cell}}</p>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col col-12 class="lba">
+		<b>Latitude,Longitude</b>
+	</ion-col>
+	<ion-col col-12>
+		<p>{{profileInfo[0]?.latitude}} , {{profileInfo[0]?.longitude}}</p>
+	</ion-col>
+</ion-row>
+</ion-card-content>
+</ion-card>
+</div>
+
+</ion-content>

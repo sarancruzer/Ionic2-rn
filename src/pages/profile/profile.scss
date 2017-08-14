@@ -1,0 +1,54 @@
+page-profile {
+.page-title{
+	color:#8f001d;
+	background:#fe809a;
+	font-size:20px;font-family: 'Padauk', sans-serif;
+	padding:7px; padding: 7px;
+    position: fixed;
+    width: 100%;
+    z-index: 999; margin-top:0px;
+}
+.register-form{ margin:50px 10px 10px 10px;}
+.register-log{ background:#fff4e9;}
+.register-log .scroll-content{padding:0px !important;}
+.register-log .scroll-content .label-md{ margin:0px;}
+.register-log .scroll-content .page-title{
+	color:#8f001d;
+	background:#fe809a;
+	font-size:20px;font-family: 'Padauk', sans-serif;
+	padding:7px; padding: 7px;
+    position: fixed;
+    width: 100%;
+    z-index: 999; margin-top:0px;
+}
+.listed{ border:1px solid #c2c2c2;}
+.listed .card-content-md{ padding:0px !important;}
+.listed .card-content-md .grid{ padding:0px !important;}
+.listed .card-content-md .grid .row .col{ font-size:17px; font-weight:400; color:#666; font-family: "Padauk",sans-serif;}
+.listed .card-content-md .grid .row:nth-child(1) {
+    background:#e7f1fb;
+}
+.listed .card-content-md .grid .row:nth-child(3) {
+    background:#e7f1fb;
+}
+
+.register-form .listed.card-md{background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 89%, rgba(195,31,65,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(89%, rgba(255,255,255,1)), color-stop(100%, rgba(195,31,65,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 89%, rgba(195,31,65,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 89%, rgba(195,31,65,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 89%, rgba(195,31,65,1) 100%); /* ie10+ */
+background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 89%, rgba(195,31,65,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C31F41', endColorstr='#ffffff',GradientType=1 ); /* ie6-9 */}
+.register-form .listed.card-ios{ background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 89%, rgba(195,31,65,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(89%, rgba(255,255,255,1)), color-stop(100%, rgba(195,31,65,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 89%, rgba(195,31,65,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 89%, rgba(195,31,65,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 89%, rgba(195,31,65,1) 100%); /* ie10+ */
+background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 89%, rgba(195,31,65,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C31F41', endColorstr='#ffffff',GradientType=1 ); /* ie6-9 */}
+.register-form .listed.card-md .card-content-ios .row{ border:1px dotted #ccc;}
+.register-form .listed.card-ios .card-content-md .row{ border-bottom:1px dotted #ccc;}
+.listed .card-content-ios {
+    padding: 0;
+}
+}

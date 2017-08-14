@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Padauk');
+page-post-needs {
+.heade-ti .toolbar-content-md{ text-align:center;}
+.center-image {
+    margin:auto 0;
+
+}
+ion-fab[top][edge]{top:10px;}
+.text-input-md{    color: #000;font-family: 'Padauk', sans-serif;text-transform: capitalize; }
+.register-log{ background: rgba(0, 0, 0, 0) linear-gradient(to bottom, white 0%, #f6f6f6 47%, #ededed 100%);height:100%;}
+.register-log .scroll-content{padding:0px !important;}
+.register-log .scroll-content .label-md{ margin:0px; color:#666; font-size:15px;
+    margin: 0;
+    padding: 8px;}
+.register-log .scroll-content .page-title{
+	background: #fe809a none repeat scroll 0 0;
+    color: #8f001d;
+    font-family: "Padauk",sans-serif;
+    font-size: 20px;
+    padding: 7px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.register-log .scroll-content .label-ios{  color: #666;
+    font-size: 15px;
+    margin: 0;
+    padding: 8px;}
+.select-bg .item-inner .input-wrapper{}
+.register-form{margin: 50px 10px 10px;}
+.register-form .list-ios{ margin-bottom:15px;}
+.register-form .list-ios .input-ios{ padding-left:15px;}
+ion-input{
+	border: 1px solid #F8466B;
+    border-radius: 25px;
+     color:#000 !important;font-family: 'Padauk', sans-serif;text-transform: capitalize; 
+}
+.btn-blue{box-shadow:none;float:right;
+ background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #239be6 0%, #1d95df 20%, #158bd5 49%, #0a7fc8 73%, #0378c1 100%); width:90%; height:35px;
+}
+.btn-can{box-shadow:none; float:left;
+   background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #c6c6c6 0%, #b7b7b7 24%, #949494 47%, #8c8c8c 68%, #7b7b7b 87%, #6a6a6a 100%); width:90%; height:35px;
+}
+
+.btn-blue .button-inner{font-family: 'Padauk', sans-serif; font-size:15px; color:#fff;}
+.register-log .scroll-content .page-title.label-ios{ margin:0px 0px 0px 0px; }
+ .add-new{ background:none;
+    border: 2px solid #9d0c2a;padding:19px; color:#C31F41 !important;
+    box-shadow: none;
+    font-family: "Padauk",sans-serif !important;
+    font-size: 18px;
+    text-transform: capitalize;}
+	.select-bg .item-inner .input-wrapper .select-md{ color:red;  padding:0px; background:none; border:none;}
+	.select-bg .item-inner .input-wrapper .select-md .select-icon .select-icon-inner{ color:#666 !important;}
+		.select-bg .item-inner .input-wrapper .select-md .select-icon{ margin-right:5px; color:#fff !important;}
+	.select-bg .item-inner .input-wrapper .label-md .select-md{ color:fff;  padding:0px;}
+		.select-bg {background:none; padding:0px; border: 1px solid #F8466B;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Padauk",sans-serif;
+    text-transform: capitalize;}
+	.button-inner{ color:#333;}
+	.register-log .scroll-content .page-title {
+    background: #fe809a none repeat scroll 0 0;
+    color: #8f001d;
+    font-family: "Padauk",sans-serif;
+    font-size: 20px;
+    padding: 7px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.register-log {}
+.fab-ios{ color:#000 !important;}	
+.text-input::-moz-placeholder {
+  color:#000 !important;font-size:15px;
+}
+
+.text-input:-ms-input-placeholder {
+  color:#000 !important;font-size:15px;
+}
+
+.text-input::-webkit-input-placeholder {
+  color:#000 !important;font-size:15px;
+}
+
+
+.select-bg .item-inner .input-wrapper .select-ios{ color:red;  padding:0px; background:none; border:none;}
+	.select-bg .item-inner .input-wrapper .select-ios .select-icon .select-icon-inner{ color:#666 !important;}
+		.select-bg .item-inner .input-wrapper .select-ios .select-icon{ margin-right:5px; color:#fff !important;}
+	.select-bg .item-inner .input-wrapper .label-ios .select-ios{ color:fff;  padding:0px;}
+		.select-bg {background:none; padding:0px; border: 1px solid #F8466B;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Padauk",sans-serif;
+    text-transform: capitalize;}
+	.button-inner{ color:#333;}
+	.register-log .scroll-content .page-title {
+    background: #fe809a none repeat scroll 0 0;
+    color: #8f001d;
+    font-family: "Padauk",sans-serif;
+    font-size: 20px;
+    padding: 7px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.select-bg.item-block{ min-height:35px !important;}
+.register-log .scroll-content .label-ios{  }
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{border-bottom:1px solid #F8466B;}
+.list-ios > .item-block:first-child{border-top:1px solid #F8466B !important;}
+
+}

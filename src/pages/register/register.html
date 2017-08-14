@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar color="ngocolor">
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+       <img class="navbar-image" width="180" hight="20" src="assets/images/NGO_Post_Needs.png">
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="register-log">
+<ion-label class="page-title" text-center>Register</ion-label>
+<div class="register-form">
+<br/>
+<form class="loginform" (ngSubmit)="register()" [formGroup]="registerForm">
+<ion-list>
+    <ion-input type="text" formControlName="name" placeholder="Name"></ion-input>
+</ion-list>
+<p *ngIf="!registerForm.controls.name.valid && (registerForm.controls.name.dirty || submitAttempt)" class="err-reds">Please enter the name</p>
+<ion-list>
+    <ion-input type="text" formControlName="email" placeholder="Email"></ion-input>
+</ion-list>
+<p *ngIf="!registerForm.controls.email.required && (registerForm.controls.email.dirty || submitAttempt)" class="err-reds">Please enter the email</p>
+<p *ngIf="!registerForm.controls.email.pattern && submitAttempt" class="err-reds">Please enter valid email</p>
+<ion-list>
+    <ion-input type="text" formControlName="mobile" placeholder="Mobile"></ion-input>
+</ion-list>
+<p *ngIf="!registerForm.controls.mobile.valid && (registerForm.controls.mobile.dirty || submitAttempt)" class="err-reds">Please enter the mobile</p>
+<ion-list>
+    <ion-input type="password" formControlName="password" placeholder="Password"></ion-input>
+</ion-list>
+<p *ngIf="!registerForm.controls.password.valid && (registerForm.controls.password.dirty || submitAttempt)" class="err-reds">Please enter the password</p>
+<ion-list>
+    <ion-input type="password" formControlName="conpass" placeholder="Confirm Password"></ion-input>
+</ion-list>
+<p *ngIf="!registerForm.controls.conpass.valid && (registerForm.controls.conpass.dirty || submitAttempt)" class="err-reds">Please enter the confirm password</p>
+<br/>
+
+<ion-list>
+<button ion-button full class="btn-blue" round>Sign Up</button>
+</ion-list>
+</form>
+</div>
+
+</ion-content>

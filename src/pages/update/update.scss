@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Padauk');
+page-update {
+.heade-ti .toolbar-content-md{ text-align:center;}
+.center-image {
+    margin:auto 0;
+
+}
+.segments .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{ border-radius:25px; color:#000;font-family: 'Padauk', sans-serif;
+ border:none; font-size:15px; font-weight:600;line-height: 43px;  text-transform: capitalize;
+  background:#ffffff; border:1px solid #C21F40;}
+
+ ion-segment{ background:#c21f40;border-radius:25px;   text-transform: capitalize;}
+ .segment-md .segment-button{border-bottom:none;color:#fff;font-family: 'Padauk', sans-serif; font-size:15px;  text-transform: capitalize; font-weight:600;line-height: 43px;}
+
+.male-s{ font-size:15px;color:#333;font-family: 'Padauk', sans-serif; text-transform: capitalize; font-size: 20px;
+    padding-left: 8px;}
+.register-log{ background: rgba(0, 0, 0, 0) linear-gradient(to bottom, white 0%, #f6f6f6 47%, #ededed 100%); height:100%;}
+.register-log .scroll-content{padding:0px !important;}
+.register-log .scroll-content .label-md{ margin:0px;}
+.register-log .scroll-content .page-title{
+	color:#8f001d;
+	background:#fe809a;
+	font-size:20px;font-family: 'Padauk', sans-serif;
+	padding:7px; padding: 7px;
+    position: fixed;
+    width: 100%;
+    z-index: 999; margin-top:0px;
+}
+.register-form{ margin:50px 10px 10px 10px;}
+.select{
+	border: 1px solid #fff;
+    border-radius: 25px;
+     text-color: #fff;
+     background-color: #fe4a6f;
+}
+.btnselect{
+ background-color: #2876F5;
+ border-radius: 25px;	
+}
+
+ion-input{
+	border: 1px solid #F8466B;
+    border-radius: 25px;
+     text-color: #fff;font-family: 'Padauk', sans-serif;text-transform: capitalize; 
+}
+ion-textarea{
+	border: 1px solid #F8466B;
+    border-radius: 25px;
+     text-color: #fff;font-family: 'Padauk', sans-serif;text-transform: capitalize; 
+}
+.btn-blue{box-shadow:none; height:40px;
+ background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #239be6 0%, #1d95df 20%, #158bd5 49%, #0a7fc8 73%, #0378c1 100%);
+}
+
+.btn-blue .button-inner{font-family: 'Padauk', sans-serif;text-transform: capitalize; font-size:18px; color:#fff;}
+
+.select-bg .item-inner .input-wrapper .select-md .select-icon { color:red !important;}
+	.select-bg .item-inner .input-wrapper .select-md{ color:fff;  padding:0px; background:none; border:none;}
+	.select-bg .item-inner .input-wrapper .select-md .select-icon .select-icon-inner{ color:#FB486D !important;}
+		.select-bg .item-inner .input-wrapper .select-md .select-icon{ margin-right:5px; color:#FB486D !important;}
+	.select-bg .item-inner .input-wrapper .label-md .select-md{ color:fff;  padding:0px;}
+	.select-bg .item-inner .input-wrapper .select-md{ color:fff;  padding:0px; background:none; border:none;}
+	.select-bg .item-inner .input-wrapper .select-md .select-icon .select-icon-inner{ color:#FB486D !important;}
+		.select-bg .item-inner .input-wrapper .select-md .select-icon{ margin-right:5px; color:#FB486D !important;}
+	.select-bg .item-inner .input-wrapper .label-md .select-md{ color:fff;  padding:0px;}
+		.select-bg {background:none; padding:0px; border: 1px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Padauk",sans-serif;
+    text-transform: capitalize;}
+		.select-bg .item-inner .input-wrapper .select-md{ color:#222;  padding:0px; background:none; border:none;}
+	.select-bg .item-inner .input-wrapper .select-md .select-icon .select-icon-inner{ color:#333 !important;}
+		.select-bg .item-inner .input-wrapper .select-md .select-icon{ margin-right:5px; color:#333 !important;}
+	.select-bg .item-inner .input-wrapper .label-md .select-md{ color:fff; padding:0px !important; }
+		.select-bg {background:none; padding:0px; border: 1px solid #F8466B;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Padauk",sans-serif;
+    text-transform: capitalize;}
+	.button-inner{ color:#333;}
+	.item-input .label-md, .item-select .label-md, .item-datetime .label-md{color:#666 !important; padding:0px 0px 0px 5px;}
+		.item-input .label-ios, .item-select .label-ios, .item-datetime .label-ios{color:#666 !important; padding:0px 0px 0px 5px;}
+	
+.text-input::-moz-placeholder {
+  color:#000 !important;font-size:15px;
+}
+
+.text-input:-ms-input-placeholder {
+  color:#000 !important;font-size:15px;
+}
+
+.text-input::-webkit-input-placeholder {
+  color:#000 !important;font-size:15px;
+}
+register-log .scroll-content .label-md {
+    margin: 0; color:#666 !important;
+}
+.list-ios .item-block .item-inner{border-bottom:none;}
+.list-md .item-block .item-inner{border-bottom:none;}
+.input-ios{padding-left:5px;}
+.register-log .scroll-content .label-ios {
+    margin: 0;
+}
+.select-bg .item-inner .input-wrapper .select-ios{ color:#222;  padding:0px; background:none; border:none;}
+	.select-bg .item-inner .input-wrapper .select-ios .select-icon .select-icon-inner{ color:#333 !important;}
+		.select-bg .item-inner .input-wrapper .select-ios .select-icon{ margin-right:5px; color:#333 !important;}
+	.select-bg .item-inner .input-wrapper .label-ios .select-ios{ color:fff; padding:0px !important; }
+		.select-bg {background:none; padding:0px; border: 1px solid #F8466B;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Padauk",sans-serif;
+    text-transform: capitalize;}
+	.button-inner{ color:#333;}
+	.item-input .label-ios, .item-select .label-ios, .item-datetime .label-ios{color:#666 !important; padding:0px 0px 0px 5px;}
+	
+	
+
+.segments .segment-ios .segment-button.activated, .segment-ios .segment-button.segment-activated{ border-radius:25px !important; color:#000;font-family: 'Padauk', sans-serif;
+ border:none; font-size:15px; font-weight:600;line-height:36px;
+  background:#fff;}
+.segment-button{border:none !important;}
+  .segment-ios .segment-button{ height:35px;}
+
+ .segment-ios .segment-button{border-bottom:none;color:#fff;font-family: 'Padauk', sans-serif; font-size:15px; font-weight:600;line-height:35px;}
+.button-md.browse{
+	text-transform:inherit;
+}
+}

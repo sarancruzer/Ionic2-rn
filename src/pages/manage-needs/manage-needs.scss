@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Padauk');
+
+page-manage-needs {
+.heade-ti .toolbar-content-md{ text-align:center;}
+.center-image {
+    margin:auto 0;
+
+}
+.text-input-md{    color: #fff;font-family: 'Padauk', sans-serif;text-transform: capitalize; }
+.register-log{background:#fff4e9 !important; height:100%;}
+.main-donor .row .col{ background:#fff;}
+.register-log .scroll-content{padding:0px !important;}
+.register-log .scroll-content .label-md{ margin:0px; color: #fff;
+    margin: 0;
+    padding: 8px;}
+.register-log .scroll-content .page-title{
+	background:#ffd9e1;
+    color: #8f001d;
+    font-family: "Padauk",sans-serif;
+    font-size: 20px;
+    padding: 7px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.listed-card {
+    background: #27aab0 none repeat scroll 0 0;
+    box-shadow: none;
+}
+.listed-card .grid .row .col {
+    color: #fff;
+    font-size: 17px;
+}
+.listed-card .grid .ngo-head .col {
+    background-color: #ffe9e8;
+}
+.listed-card .grid .row {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-bottom: 1px dotted #ccc;
+}
+.ngo-head h2 {
+    color: #0d6fbd;
+    font-size: 18px;
+    font-weight: 600;
+    height: 30px;
+    line-height: 37px;
+    text-align: center;
+}
+
+
+.searchbar-md{padding:0px; margin-bottom:15px;}
+.register-form{margin:55px 10px 10px;}
+.search-icons{ padding:10px 10px 0px 10px;}
+.searchbar-md .searchbar-input{border:1px solid #e2e0ec;border-radius:25px; font-weight:400;box-shadow:none;font-size:17px;line-height:30px;padding:5px 55px;}
+.searchbar-md .searchbar-search-icon{height:21px;left:16px;top:11px;width:21px;background-image: url('../assets/images/search.png'); }
+.searchbar-md .searchbar-clear-icon{background:url('../assets/images/close.png') 0px 10px no-repeat;}
+.login-bgimg											{ background:#fff4e9;}
+
+.listed-ngo{box-shadow:none !important; padding:0px; }
+.login-bgimg .scroll-content{padding:0px !important;}
+.listed-ngo .row .col{  font-size:17px; color:#333; font-weight:400; font-family: "Padauk",sans-serif; }
+.listed-ngo .row:nth-child(2) {
+      background:#e6e6e6;
+}
+.listed-ngo .row:nth-child(4) {
+      background:#e6e6e6;
+}
+.listed-ngo .row:nth-child(6) {
+      background:#e6e6e6;
+}
+.listed-ngo .row:nth-child(8) {
+      background:#e6e6e6; margin-bottom:10px;
+}
+.listed-ngo .row:nth-child(10) {
+      background:#e6e6e6; 
+}
+.alert-md .alert-head{padding:0px !important;}
+.listed-ngo .row{ padding:3px;}
+.listed-ngo .row .col strong{ color:#000; font-weight:600;font-size:16px;}
+.ngo-head { background-color:#d4f4ff;text-align:center; font-size:18px; font-weight:600;}
+.ngo-head i{ color:rgba(69, 71, 72, 0.48);}
+.ngo-head h2{font-size:18px;font-weight:600;height:30px;line-height:37px;text-align:center; color:#0d6fbd;}
+.content-md hr{background:#f7c28c;}
+.content-ios hr{background:#f7c28c;}
+.ngo-border{ border:1px solid #e6d3e0;}
+.listed-card{box-shadow:none; background:#27aab0;}
+.listed-card .grid .row .col{ background:none;}
+.listed-card .grid .row{ background:none;  border-bottom:1px dotted #ccc;}
+.listed-card .grid .row:last-child{border-bottom:none !important;}
+.listed-card .grid .row:first-child{ border-bottom:1px solid #faedf1 !important;}
+.listed-card .grid .ngo-head .col {background-color:#ffe9e8 !important;}
+.listed-card .grid .row .col{color:#fff; font-size:17px;}
+/*------------------------------Ios css------------------------------*/
+.searchbar-ios{background:none;border-top:none !important;border-bottom:none !important;}
+.searchbar-ios{padding:0px; margin-bottom:15px;}
+.register-form{margin:55px 10px 10px;}
+.search-icons{ padding:10px 10px 0px 10px;}
+.searchbar-ios .searchbar-input{border:1px solid #e2e0ec; height:40px !important;border-radius:25px; font-weight:400;box-shadow:none;font-size:17px;line-height:30px;padding:5px 55px;}
+.searchbar-ios .searchbar-search-icon{height:21px;left:16px;top:11px;width:21px;background-image: url('../assets/images/search.png'); background-size: 19px auto; }
+.searchbar-ios .searchbar-clear-icon{background:url('../assets/images/close.png') 0px 10px no-repeat;}
+.searchbar-ios.searchbar-left-aligned .searchbar-input{ padding-left:45px !important;}
+/*------------------------------Ios css end------------------------------*/
+
+
+.listed{ border:1px solid #c2c2c2;}
+.listed .card-content-md{ padding:0px !important;}
+.listed .card-content-md .grid{ padding:0px !important;}
+.listed .card-content-md .grid .row .col{ font-size:17px; font-weight:400; color:#fff; font-family: "Padauk",sans-serif;}
+.listed .card-content-md .grid .row .col .lba{color:#000 !important; font-weight:600;}
+/*.listed .card-content-md .grid .row:nth-child(1) {
+    background:#e7f1fb;
+}
+.listed .card-content-md .grid .row:nth-child(3) {
+    background:#e7f1fb;
+}
+.listed .card-content-md .grid .row:nth-child(5) {
+    background:#e7f1fb;
+}*/
+.lba{color:#000 !important; font-weight:600;}
+.edit-btn{ background:#488AFF; font-size:12px; text-transform:capitalize; font-family:"Padauk",sans-serif !important;}
+.edit-btn .button-inner i.fa-eye{color:#fff; line-height:5px;}
+.delte-btn{ background:#C31F41; font-size:12px; text-transform:capitalize; font-family:"Padauk",sans-serif !important; float:right;}
+
+.add-segment{   background: #fa6c89 none repeat scroll 0 0;   font-family: "Padauk",sans-serif;
+    border: 1px solid #b13d55;
+    border-radius: 25px;
+    box-shadow: none;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 20px;
+    text-transform: capitalize;}
+.searchbar-md{padding:0px; margin-bottom:15px;}
+.register-form{margin:55px 10px 10px;}
+.search{ padding:0px;}
+.searchbar-md .searchbar-input{ border-radius:25px !important; border:1px solid #0074bd;box-shadow:none !important;padding:5px 55px !important;}
+.searchbar-md .searchbar-search-icon{height:21px;left:16px;top:11px;width:21px;background-image: url('../assets/images/search.png'); }
+ion-input{
+	border: 1px solid #fff;
+    border-radius: 25px;
+     color: #fff;font-family: 'Padauk', sans-serif;text-transform: capitalize; 
+}
+.segments .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{ border-radius:25px; color:#fff;font-family: 'Padauk', sans-serif;
+ border:none; font-size:15px; font-weight:600;line-height: 43px;
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #3faaec 0%, #37a3e6 19%, #2b99dd 37%, #2b99dd 55%, #1a8ad0 75%, #067ac2 100%);}
+
+ ion-segment{ background:#acd9f6;border-radius:25px; }
+ .segment-md .segment-button{border-bottom:none;color:#000;font-family: 'Padauk', sans-serif; font-size:15px; font-weight:600;line-height: 43px;}
+ 
+ .badge-md{ font-size:12px; color:#222; background:#fff;}
+ .badge-md i.fa-check{color:green;}
+  .badge-md i.fa-ban{color:red;}
+  .main-donor{ border:1px solid #08b572; padding:0px;}
+  .main-donor .row{ border-bottom:1px solid #08b572;}
+   .main-donor .row .lba{border-right:1px solid #08b572;}
+ .badge-ios{ font-size:12px; color:#222; background:#fff;}
+  
+ion-fab[top][edge] {
+    top: 13px;
+}
+.register-log .scroll-content .page-title.label-ios{ margin:0px !important;}
+.listed.card-md .card-content-md .grid .row .col{ border-bottom:1px dotted #6c627d;}
+.listed.card-md{background:#312644 !important;}
+.listed.card-ios{background:#312644 !important;}
+.searchbar-ios{padding:0px; margin-bottom:15px;}
+.register-form{margin:55px 10px 10px;}
+.search{ padding:0px;}
+.searchbar-ios .searchbar-input{ border-radius:25px !important; border:1px solid #0074bd;box-shadow:none !important;padding:5px 55px !important;}
+.searchbar-ios .searchbar-search-icon{height:21px;left:16px;top:11px;width:21px;background-image: url('../assets/images/search.png'); }
+}

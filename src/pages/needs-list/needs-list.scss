@@ -1,0 +1,132 @@
+ 
+@import url('https://fonts.googleapis.com/css?family=Padauk');
+
+page-needs-list {
+.heade-ti .toolbar-content-md{ text-align:center;}
+.center-image {
+    margin:auto 0;
+
+}
+.text-input-md{    color: #fff;font-family: 'Padauk', sans-serif;text-transform: capitalize; }
+.register-log{background:#fff; height:100%;}
+.register-log .scroll-content{padding:0px !important;}
+.register-log .scroll-content .label-md{ margin:0px; color: #fff;
+    margin: 0;
+    padding: 8px;}
+.register-log .scroll-content .page-title{
+	background:#ffd9e1;
+    color: #8f001d;
+    font-family: "Padauk",sans-serif;
+    font-size: 20px;
+    padding: 7px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.listed.card-md{ background:#27AAB0 !important;}
+.listed.card-ios{ background:#27AAB0 !important;}
+.listed .card-content-ios{ padding: 0;}
+.listed .card-content-md{ padding:0px !important;}
+.listed .card-content-md .grid{ padding:0px !important;}
+.listed .card-content-md .grid .row .col{ font-size:17px; font-weight:400; color:#fff; font-family: "Padauk",sans-serif;}
+.listed .card-content-md .grid .row{border-bottom: 1px dotted #ccc;}
+.lba{color:#000 !important; font-weight:600 !important; font-size:16px !important; }
+.edit-btn{ background:#ba1d3d; font-size:12px; text-transform:capitalize; font-family:"Padauk",sans-serif !important;}
+.edit-btn .button-inner i.fa-eye{color:#fff; line-height:5px;}
+.delte-btn{ background:#C31F41; font-size:12px; text-transform:capitalize; font-family:"Padauk",sans-serif !important; float:right;}
+
+.add-segment{   background: #fa6c89 none repeat scroll 0 0;   font-family: "Padauk",sans-serif;
+    border: 1px solid #b13d55;
+    border-radius: 25px;
+    box-shadow: none;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 20px;
+    text-transform: capitalize;}
+.searchbar-md{padding:0px; margin-bottom:15px;}
+.register-form{margin:55px 10px 10px;}
+.search{ padding:0px;}
+.searchbar-md .searchbar-input{ border-radius:25px !important; border:1px solid #0074bd;box-shadow:none !important;padding:5px 55px !important;}
+.searchbar-md .searchbar-search-icon{height:21px;left:16px;top:11px;width:21px;background-image: url('../assets/images/search.png'); }
+ion-input{
+	border: 1px solid #fff;
+    border-radius: 25px;
+     color: #fff;font-family: 'Padauk', sans-serif;text-transform: capitalize; 
+}
+.segments .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{ border-radius:25px; color:#fff;font-family: 'Padauk', sans-serif;
+ border:none; font-size:15px; font-weight:600;line-height: 43px;
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #3faaec 0%, #37a3e6 19%, #2b99dd 37%, #2b99dd 55%, #1a8ad0 75%, #067ac2 100%);}
+
+ ion-segment{ background:#acd9f6;border-radius:25px; }
+ .segment-md .segment-button{border-bottom:none;color:#000;font-family: 'Padauk', sans-serif; font-size:15px; font-weight:600;line-height: 43px;}
+ 
+ .badge-md{ font-size:12px; color:#222; background:#fff;}
+ .badge-md i.fa-check{color:green;}
+  .badge-md i.fa-ban{color:red;}
+  
+  .searchbar-ios{padding:0px; margin-bottom:15px;}
+.register-form{margin:55px 10px 10px;}
+.search{ padding:0px;}
+
+.searchbar-ios .searchbar-search-icon{height:21px;left:16px;top:11px;width:21px;background-image: url('../assets/images/search.png'); }
+  
+  .listed .card-content-ios .grid .row .col {
+    color: #fff;
+    font-family: "Padauk",sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+.listed .card-content-ios .grid .row {
+    border-bottom: 1px dotted #ccc;
+}
+.listed .card-content-ios .grid {
+    padding: 0;
+}
+.badge-ios {
+    background: #fff none repeat scroll 0 0;
+    color: #222;
+    font-size: 12px;
+}
+.badge-ios i.fa-check {
+    color: green;
+}
+/*------------------------------Ios css------------------------------*/
+.searchbar-ios{background:none;border-top:none !important;border-bottom:none !important;}
+.searchbar-ios{padding:0px; margin-bottom:15px;}
+.register-form{margin:55px 10px 10px;}
+.searchbar-ios .searchbar-input {
+    border: 1px solid #0074bd !important;
+    border-radius: 25px;
+    box-shadow: none;
+    padding: 5px 55px;
+}
+.register-log .scroll-content .label-ios {
+
+    margin: 0;
+    padding: 8px;
+}
+.search-icons{ padding:10px 10px 0px 10px;}
+.searchbar-ios .searchbar-input{border:1px solid #e2e0ec; height:40px !important;border-radius:25px; font-weight:400;box-shadow:none;font-size:17px;line-height:30px;padding:5px 55px;}
+.searchbar-ios .searchbar-search-icon{height:21px;left:16px;top:11px;width:21px;background-image: url('../assets/images/search.png'); background-size: 19px auto; }
+.searchbar-ios .searchbar-clear-icon{background:url('../assets/images/close.png') 0px 10px no-repeat;}
+.searchbar-ios.searchbar-left-aligned .searchbar-input{ padding-left:45px !important;}
+
+.segments .segment-ios .segment-button.activated, page-needs-list .segment-ios .segment-button.segment-activated {
+    background: transparent linear-gradient(to bottom, #3faaec 0%, #37a3e6 19%, #2b99dd 37%, #2b99dd 55%, #1a8ad0 75%, #067ac2 100%) !important;
+    border: medium none;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Padauk",sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 43px;
+}
+.segments .segment-ios .segment-button.activated, .segment-ios .segment-button.segment-activated{ border-radius:25px !important; color:#fff;font-family: 'Padauk', sans-serif;
+ border:none; font-size:15px; font-weight:600;line-height:36px;
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #3faaec 0%, #37a3e6 19%, #2b99dd 37%, #2b99dd 55%, #1a8ad0 75%, #067ac2 100%) !important;}
+.segment-button{border:none !important;}
+  .segment-ios .segment-button{ height:35px;}
+  ion-segment{ background:#acd9f6;border-radius:25px; }
+ .segment-ios .segment-button{border-bottom:none;color:#000;font-family: 'Padauk', sans-serif; font-size:15px; font-weight:600;line-height:35px;}
+/*------------------------------Ios css end------------------------------*/
+}

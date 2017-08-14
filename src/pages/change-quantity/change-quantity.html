@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="ngocolor">
+    <ion-title>Change Quantity</ion-title> 
+    <ion-buttons end>
+    <button ion-button icon-only (click)="dismiss()">
+        <ion-icon item-right name="ios-close-outline"></ion-icon>
+    </button>
+  </ion-buttons>  
+  </ion-navbar>
+  
+</ion-header>
+
+
+<ion-content padding>
+<ion-grid>
+          <ion-row>
+              <ion-label>Product</ion-label>
+          </ion-row>
+          <ion-row>
+              <ion-input [(ngModel)]="product_name" type="text" value="{{product_name}}"></ion-input>
+          </ion-row>
+           <ion-row>
+              <ion-label>Description</ion-label>
+          </ion-row>
+          <ion-row>
+              <ion-input [(ngModel)]="product_description" type="text" 
+              value="{{product_description}}"></ion-input>
+          </ion-row>
+           <ion-row>
+              <ion-label>Current Quantity</ion-label>
+          </ion-row>
+          <ion-row>
+              <ion-input [(ngModel)]="product_quantity" type="text" value="{{product_quantity}}">
+              </ion-input>
+          </ion-row>
+  <button ion-button round full (click)="editmanageNeeds()">Save</button>
+</ion-grid>
+</ion-content>

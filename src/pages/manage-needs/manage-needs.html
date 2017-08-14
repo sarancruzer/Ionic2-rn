@@ -1,0 +1,90 @@
+<ion-header class="heade-ti">
+  <ion-navbar color="ngocolor">
+
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="dashboardPage()">
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+    <img class="center-image" src="assets/images/logotop.png" width="200" height="40" />
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="register-log">
+
+<ion-label class="page-title" text-center>Product Listing</ion-label>
+<div class="register-form">
+
+<br/>
+
+<div>
+
+  <ion-list *ngFor="let viewneeds of viewListInfo">
+
+ 
+  <ion-grid class="main-donor">
+  <ion-row>
+    <ion-col col-6 class="lba">BN NAME</ion-col>
+    <ion-col col-6>{{viewneeds.bn_name}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6 class="lba">Posted Date</ion-col>
+    <ion-col col-6>{{viewneeds.date_time}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6 class="lba">Status</ion-col>
+     <ion-col col-6 *ngIf="viewneeds.status == 1">Active</ion-col>
+    <ion-col col-6 *ngIf="viewneeds.status == 2">Blocked</ion-col>
+  </ion-row>
+</ion-grid>
+</ion-list>
+<br/>
+   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+<ion-card class="listed-card">
+ <ion-grid class="listed-ngo ngo-border" *ngFor="let viewneedss of viewneedListInfo">
+  <ion-row class="ngo-head">
+    <ion-col col-12><h2><i class="fa fa-building" aria-hidden="true"></i> Avvai Home</h2>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6><strong>Product</strong></ion-col>
+    <ion-col col-6>{{viewneedss.product}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6><strong>Product Description</strong></ion-col>
+    <ion-col col-6>{{viewneedss.prod_desc}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6><strong>Quantity</strong></ion-col>
+    <ion-col col-6>{{viewneedss.qty}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6><strong>Donated Quantity</strong></ion-col>
+    <ion-col col-6>{{viewneedss.received_qty}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6><strong>Posted/Updated Date</strong></ion-col>
+    <ion-col col-6>{{viewneedss.datetime}}</ion-col>
+  </ion-row>
+   <ion-row>
+    <ion-col col-6><strong>Status</strong></ion-col>
+     <ion-col col-6 *ngIf="viewneedss.status == 1">Active</ion-col>
+    <ion-col col-6 *ngIf="viewneedss.status == 2">Blocked</ion-col>
+  </ion-row>
+   <ion-row>
+    <ion-col col-6><strong>Take Action</strong></ion-col>
+     <ion-col col-6><ion-badge item-end *ngIf="viewneedss.status == 1" (click)="changeStatus(viewneedss.id,viewneedss.status)"><i class="fa fa-ban" aria-hidden="true"></i> Block</ion-badge>
+    <ion-badge *ngIf="viewneedss.status == 2" item-end (click)="changeStatus(viewneedss.id,viewneedss.status)"><i class="fa fa-check" aria-hidden="true"></i> Approved</ion-badge>
+     <ion-badge item-end (click)="modifyNeeds(viewneedss)"><i class="fa fa-edit" aria-hidden="true"></i> Modify
+    </ion-badge></ion-col>
+  </ion-row>
+  </ion-grid>
+</ion-card>
+
+</div>
+</div>
+</ion-content>

@@ -1,0 +1,19 @@
+<ion-menu [content]="content" side="right">
+
+  <ion-header>
+    <ion-toolbar color="ngocolor">
+      <ion-title>REALNEEDS</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="menu-bg">
+    <ion-list>
+      <button ion-item *ngFor="let p of pages" (click)="openPage(p)"><i style="padding-right:0px; width:20px" class={{p.myIcon}} aria-hidden="true"></i>
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

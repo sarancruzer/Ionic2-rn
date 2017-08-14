@@ -1,0 +1,167 @@
+<ion-header class="heade-ti">
+  <ion-navbar color="ngocolor">
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="dashboardPage()">
+          <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+    <img class="center-image" src="assets/images/logotop.png" width="200" height="40" />
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="register-log">
+<ion-label class="page-title" text-center>Update Profile</ion-label>
+<br/>
+<div class="register-form">
+
+  <ion-segment [(ngModel)]="updateprofile">
+    <ion-segment-button value="profit">
+  Non Profit
+    </ion-segment-button>
+    <ion-segment-button value="noofpeople">
+No.Of People
+    </ion-segment-button>
+     <ion-segment-button value="contact">
+   Contact
+    </ion-segment-button>
+  </ion-segment>
+
+<div [ngSwitch]="updateprofile">
+<br/>
+  <ion-list *ngSwitchCase="'profit'">
+  <!-- <ion-item class="ngo-bg-color"> -->
+      <form [formGroup]="profileForm">
+      <ion-input type="text" formControlName="organization_name" placeholder="Organization Name *">
+      </ion-input><br>
+      <ion-textarea type="text" formControlName="organization_description" placeholder="Description">
+      </ion-textarea><br>
+       <ion-item class="select-bg">
+       <ion-label>Category *</ion-label>
+      <ion-select>
+      <ion-option value="nes">Physically Handicapped</ion-option>
+      <ion-option value="n64">Mentally Challenged</ion-option>
+      <ion-option value="ps">Healthcare</ion-option>
+      <ion-option value="genesis">Facility for Homeless</ion-option>
+      <ion-option value="saturn">Elderly Care Home</ion-option>
+      <ion-option value="snes">Children and Orphange</ion-option>
+      <ion-option value="snes">Blind Home</ion-option>
+    </ion-select>
+    </ion-item><br>
+    
+      <ion-input type="text" placeholder="Website">
+      </ion-input><br>
+      <ion-input type="text" placeholder="Govt Registration Id *">
+      </ion-input><br>
+      <ion-input type="text" placeholder="Govt Registration Date *">
+      </ion-input><br>
+      <ion-input type="text" placeholder="Certificate Expiry Date *">
+      </ion-input><br>
+     <button ion-button outline round class="browse" color="danger">Browse</button>
+     <br>
+     <br>
+      <ion-input type="text" placeholder="About the Organization">
+      </ion-input><br>
+    <button ion-button full class="btn-blue" round (click)="tab2()">Next</button>
+    </form>
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'noofpeople'">
+    <ion-label class="male-s">Male</ion-label>
+    <ion-row>
+    <ion-col>
+     <ion-input type="text" placeholder="Age < 5">
+      </ion-input><br>
+      <ion-input type="text" placeholder="16 - 30">
+      </ion-input><br>
+      <ion-input type="text" placeholder="Age > 60">
+      </ion-input><br>
+    </ion-col>
+    <ion-col>
+      <ion-input type="text" placeholder="6 - 15">
+      </ion-input><br>
+      <ion-input type="text" placeholder="31 - 60">
+      </ion-input><br>
+      </ion-col>
+      </ion-row>
+ 
+    <ion-label class="male-s">Female</ion-label>
+    <ion-row>
+    <ion-col>
+     <ion-input type="text" placeholder="Age < 5">
+      </ion-input><br>
+      <ion-input type="text" placeholder="16 - 30">
+      </ion-input><br>
+      <ion-input type="text" placeholder="Age > 60">
+      </ion-input><br>
+    </ion-col>
+    <ion-col>
+      <ion-input type="text" placeholder="6 - 15">
+      </ion-input><br>
+      <ion-input type="text" placeholder="31 - 60">
+      </ion-input><br>
+      </ion-col>
+      </ion-row>
+      <button ion-button full round class="btn-blue" (click)="tab3()">Next</button>
+  </ion-list>
+  <br/>
+  <ion-list *ngSwitchCase="'contact'">
+     <ion-input type="text" placeholder="Landline Number">
+      </ion-input><br>
+      <ion-input type="text" placeholder="Locality">
+      </ion-input><br>
+    
+      <ion-input type="text" placeholder="Street Address 1">
+      </ion-input><br>
+    
+      <ion-input type="text" placeholder="Zip Code *">
+      </ion-input><br>
+      <ion-item class="select-bg">
+       <ion-label>Country *</ion-label>
+      <ion-select>
+        <ion-option value="nes">Canada</ion-option>
+        <ion-option value="n64">China</ion-option>
+        <ion-option value="ps">Colombia</ion-option>
+        <ion-option value="genesis">India</ion-option>
+        <ion-option value="saturn">America</ion-option>
+        <ion-option value="snes">Australia</ion-option>
+      </ion-select>
+    </ion-item><br>
+    <ion-item class="select-bg">
+     <ion-label>State *</ion-label>
+      <ion-select>
+        <ion-option value="nes">Tamilnadu</ion-option>
+        <ion-option value="n64">Kerala</ion-option>
+        <ion-option value="ps">Harayana</ion-option>
+        <ion-option value="genesis">Jammu Kashmir</ion-option>
+        <ion-option value="saturn">Manipur</ion-option>
+        <ion-option value="snes">Megalaya</ion-option>
+      </ion-select>
+    </ion-item><br>
+     <ion-item class="select-bg">
+       <ion-label>City *</ion-label>
+      <ion-select>
+        <ion-option value="nes">Chennai</ion-option>
+        <ion-option value="n64">Arakkonam</ion-option>
+        <ion-option value="ps">Arcot</ion-option>
+        <ion-option value="genesis">Aruppukottai</ion-option>
+        <ion-option value="saturn">Bhavani</ion-option>
+        <ion-option value="snes">Chengalpattu</ion-option>
+        <ion-option value="nes">Chennai</ion-option>
+        <ion-option value="n64">Chinna salem</ion-option>
+        <ion-option value="ps">Coimbatore</ion-option>
+        <ion-option value="genesis">Coonoor</ion-option>
+        <ion-option value="saturn">Cuddalore</ion-option>
+        <ion-option value="snes">Dharmapuri</ion-option>
+        <ion-option value="ps">Dindigul</ion-option>
+      </ion-select>
+    </ion-item><br>
+    <button ion-button full round class="btn-blue" (click)="updateProfile()">Save</button>
+  </ion-list>
+</div>
+</div>
+</ion-content>

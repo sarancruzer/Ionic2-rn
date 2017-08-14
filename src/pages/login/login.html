@@ -1,0 +1,26 @@
+
+<ion-content padding class="login-bg">
+<div class="item logo-parent">
+<img class="center-image" src="assets/images/logo.png" />
+
+  </div>
+<ion-label class="onboard-title" text-center><p>REALNEEDS</p>
+
+</ion-label>
+<form class="loginform" (ngSubmit)="login()" [formGroup]="loginForm">
+<ion-list>
+    <ion-input type="text" formControlName="email" placeholder="Email"></ion-input>
+</ion-list>
+ <p *ngIf="!loginForm.controls.email.valid && (loginForm.controls.email.dirty || submitAttempt)" class="err-reds">Please enter the email</p>
+<ion-list>
+    <ion-input type="password" formControlName="password" placeholder="**************"></ion-input>
+</ion-list>
+  <p *ngIf="!loginForm.controls.password.valid && (loginForm.controls.password.dirty || submitAttempt)" class="err-reds">Please enter the password</p>
+<ion-list>
+<button ion-button full class="btnselect">Login</button>
+</ion-list>
+</form>
+<p class="forgot" (click)="forgotPassword()">Forgot Password?</p>
+<span class="acount"><p>Don't have an account? <a (click)="signup()">Sign Up &nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p></span>
+
+</ion-content>
